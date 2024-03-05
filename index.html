@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="triangle()">AREA OF TRIANGLE</button>
+    <button onclick="trapezium()">AREA OF TRAPEZIUM</button>
+    <button onclick="square()">SQUARE</button>
+    <button onclick="rho()">RHOMBUS</button>
+    <button onclick="rec()">RECTANGLE</button>
+    <button onclick="par()">PARALLELOGRAM</button>
+    <button onclick="cir()">CIRCLE</button> <br> <br>
+
+
+
+
+
+
+    <script>
+        function triangle(){
+            var height= prompt("Enter the height of the shape")
+            var base= prompt("Enter the base of the shape")
+            var areaOfTriangle = (height * base / 2)
+            alert(areaOfTriangle)
+
+        }
+
+        function trapezium(){
+            var side1 = prompt("ENTER THE FIRST SIDE")
+            var side2 = prompt("ENTER THE SECOND SIDE")
+            var height = prompt("ENTER THE HEIGHT OF THE SHAPE")
+            var areaOfTrapezium =  (side1 + side2 / 2 * height)
+            alert(areaOfTrapezium)
+        }
+
+
+        function square(){
+            var length1= prompt("ENTER YOUR FIRST LENGTH")
+            var length2= prompt("ENTER YOUR SECOND LENGTH")
+            var areaOfSquare = (length1 * length2)
+            alert(areaOfSquare)
+
+        }
+
+
+        function rho(){
+              var diagonal1 = prompt("Enter the length of the first diagonal of the rhombus")
+              var diagonal2 = prompt("Enter the length of the second diagonal of the rhombus")
+              var areaOfRhombus = (diagonal1 * diagonal2 / 2)
+              alert(areaOfRhombus)
+              dis.innerHTML= areaOfRhombus
+              }
+          
+              function rec(){
+              var length = prompt("type the length you want")
+              var width = prompt("type the width you want")
+              var areaOfRectangle = (length * width)
+              alert(areaOfRectangle)
+              dis.innerHTML= areaOfRectangle
+              }
+          
+              function par(){
+             var base = prompt("type the base you want");
+             var height = prompt("type the height you want");
+             var areaOfParallelogram = (base * height);
+             alert(areaOfParallelogram)
+             dis.innerHTML= areaOfParallelogram
+              }
+
+    function cir(){
+             var radius = prompt("Enter the radius of the circle:")   
+             var areaOfCircle =  (3.14159 * radius ** 2)
+             alert(areaOfCircle)
+             dis.innerHTML= areaOfCircle
+    }
+    </script>
+</body>
+</html>
